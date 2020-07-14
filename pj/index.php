@@ -62,8 +62,7 @@ if(isset($_POST['submitButton'])){
 	} catch(PDOException $e) {
 		echo "<div class='lomake'><p class='error'>Taulukon luominen epäonnistui. Tarkista:<br/>
 	1. Tiedot dbconfig.php tiedostossa ovat oikein<br/>
-	2. Tietokannassa ei ole jo samannimistä taulukkoa<br/>
-	3. Tietokannan nimessä ei ole erikoismerkkejä</p></div>";
+	2. Tietokannassa ei ole jo samannimistä taulukkoa</p></div>";
 	}
 
 	$pdo = null;	
@@ -74,7 +73,19 @@ if(isset($_POST['submitButton'])){
 	<h3>Luo peliohje</h3>
 	<p><a href="form.php"> --- Luo uusi peliohje</a><br/><br/><br/></p>
 	<p class="error">Ennen kuin aloitat syöttämään peliohjeita ensimmäistä kertaa, 
-	muista tehdä alla kuvaillut asiat!</p>
+	muista tehdä alempana kuvaillut asiat!</p>
+</div>
+
+<div class="lomake">
+	<h3>Muokkaa peliohjeita</h3>
+	<p>Syötä tähän peliohjekoodi, niin saat näkyviin kaikki kyseiseen koodiin liittyvät peliohjeet ja voit 
+	muokata, poistaa tai kopioida niitä.</p>
+	<p><form method="post" action="muokkaakoodilla.php">
+	Peliohjekoodi: <input type="text" maxlength="30" name="hkoodi" required />
+	<input class="lomakenappula" type="submit" value="Hae" />
+	<br/></form></p>
+	<p>Jos et tiedä peliohjekoodia / haluat nähdä kaikki tietokannan peliohjeet, kirjaudu tietokantasi hallintaan
+	(phpMyAdmin).</p>
 </div>
 
 <div class="lomake">
@@ -94,8 +105,6 @@ if(isset($_POST['submitButton'])){
 	<p class="plomake">Tee tämä sitten, kun olet luonut tietokannan tai sinulla on jo olemassa oleva tietokanta.
 	On suositeltavaa, että jokaista eri larppia varten on oma taulukko ja oma In-Feels-asennus omassa kansiossaan.
 	Taulukko tarvitsee luoda vain kerran yhtä larppia varten.</p>
-	
-	<p class="plomake">Huomaa, että erikoismerkit, esim. "-" eivät ole sallittuja. "_" on sallittu.</p>
 	
 	<form action="index.php" method="post">
 	<p class="plomake"><b>Anna taulukolle nimi:</b> <input type="text" maxlength="30" name="ttaul" value="peliohjeet" required /></p>

@@ -91,7 +91,7 @@ if(isset($_POST['submitButton'])){
 
 	// jos tietokannasta ei löytynyt mitään hakusanalla, näytetään virheilmoitus
 	if (empty($result)) {
-		echo '<div class="peliohje"><br/><p class="error">Virheellinen hahmokoodi tai hahmolla ei peliohjeita.</p>
+		echo '<div class="peliohje"><br/><p class="error">Virheellinen peliohjekoodi tai hahmolla ei peliohjeita.</p>
 		<p><button class="lomakenappula" onclick="goBack()">Takaisin hakuun</button></p></div>';
 	}
 
@@ -132,8 +132,14 @@ if(isset($_POST['submitButton'])){
 		}
 		
 		echo "</div></div>";
+		
+		if (empty($result)) {
+		echo '<p><br/></p><p align="center"><button class="palaaTakaisin" 
+		onclick="goBack()">Takaisin etusivulle</button></p>';
+		}
+		
 	}
-
+	
 	//suljetaan tietokanta
 	$stmt = null;
 	$pdo = null;

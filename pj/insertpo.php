@@ -1,11 +1,11 @@
-Ôªø<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fi">
 
 <head>
 <meta charset="UTF-8">
 <meta name="author" content="Elli O">
 <meta name="keywords" content="larppi, peliohje">
-<meta name="description" content="Lomake peliohjeiden sy√∂tt√§miseen tietokantaan.">
+<meta name="description" content="Lomake peliohjeiden syˆtt‰miseen tietokantaan.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Luo peliohje</title>
 <link type="text/css" rel="stylesheet" href="../peliohje.css">
@@ -36,7 +36,7 @@ $po_sisalto=$_POST['po_sisalto'];
 try {
 	$pdo = new PDO("mysql: host=$servername; dbname=$dbname", $username, $password);
 } catch (PDOException $e) {
-	echo "Tietokantaan yhdist√§minen ep√§onnistui.<br/>";
+	echo "Tietokantaan yhdist‰minen ep‰onnistui.<br/>";
 	die();
 }
 
@@ -47,9 +47,12 @@ $stmt = $pdo->prepare($sql);
 
 if($stmt->execute([$hahmo_koodi, $po_jarjestys, $po_tyyppi, $v_otsikko, $otsikko_bold, $otsikko_normal, $po_sisalto])){
 	echo "<p>Peliohje luotu</p>";
-	echo "<a href='form.php'>Palaa lomakkeeseen</a>";
+	echo "<a href='form.php'>Palaa lomakkeeseen</a></br><br/>";
+	echo "<a href='../pj'>Palaa pj-etusivulle</a>";
 } else {
-	echo "<br/><p class='error'>Peliohjeen luominen ep√§onnistui</p>";
+	echo "<br/><p class='error'>Peliohjeen luominen ep‰onnistui</p>";
+	echo "<a href='form.php'>Palaa lomakkeeseen</a><br/><br/>";
+	echo "<a href='../pj'>Palaa pj-etusivulle</a>";
 }
 
 //suljetaan tietokanta

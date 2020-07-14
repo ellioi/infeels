@@ -51,7 +51,7 @@ tinymce.init({
 	<h3>Metatiedot</h3>
 	<p class="plomake">Peliohjeiden lajitteluun ja käsittelyyn tarvitut tiedot.</p>
 	
-	<p class="plomake"><b>Hahmon koodi:</b> <input type="text" maxlength="30" name="hahmo_koodi" required />
+	<p class="plomake"><b>Peliohjekoodi:</b> <input type="text" maxlength="30" name="hahmo_koodi" required />
 	<a class="naytaOhje" target="1">Näytä ohje</a></p>
 	<div id="ohje1" class="lomakeHint">Hahmokohtainen koodi. Kaikilla tietyn hahmon peliohjeilla pitää olla sama koodi.
 	Pelaaja syöttää tämän koodin kenttään, kun hakee oman hahmonsa peliohjesivun. Maksimipituus 30 merkkiä.</div>
