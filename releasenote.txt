@@ -1,9 +1,0 @@
-IN-FEELS Versio 2
-
-Tehdyt muokkaukset:
-
-Muutettu "Hahmokoodi" -nimike "Peliohjekoodi" -nimikkeeseen peliohjehaun virhesivulta sekä peliohjeiden luontilomakkeelta.
-
-Lisätty "Takaisin etusivulle" -nappula peliohjesivun alareunaan.
-
-Lisätty peliohjeiden muokkausominaisuus pj-osion etusivulle. Muokkaussivulta voi muokata, poistaa tai kopioida peliohjeita.
