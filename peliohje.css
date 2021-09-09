@@ -1,0 +1,201 @@
+body {
+  margin: 0 auto;
+  padding: 0 0 40px 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  background: #24a09c;
+}
+
+#container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  background: transparent;
+}
+
+/* ------ PELIOHJEET ------- */
+
+.peliohje {
+  font: 1.2em Arial, Helvetica, sans-serif;
+  margin: 5px;
+  padding: 7px;
+  background: #fff;
+  color: rgb(102, 102, 102);
+  border-radius: 5px;
+}
+
+.poContent {
+  display: none;
+  padding: 5px 0px 0px 5px;
+}
+
+.containerJatko {
+  padding: 7px;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.poContentJatko {
+  display: none;
+  padding: 5px 0px 0px 0px;
+  background: transparent;
+}
+
+.poContentVaihto {
+  display: none;
+  padding: 5px 0px 0px 0px;
+}
+
+/* nappulat */
+
+a.showSingle {
+  font: 0.9em Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  background: gold;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+a.showSingle:hover {
+  background: #f8cc00;
+  cursor: pointer;
+}
+
+a.poVisible {
+  font: 0.9em Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  background: yellowgreen;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+a.poVisible:hover {
+  background: #83b02c;
+  cursor: pointer;
+}
+
+/* ------ YLEISET ------ */
+
+h1 {
+  font: 2em Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  word-break: break-all;
+}
+
+h2 {
+  font: 1.5em Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  word-break: break-all;
+}
+
+h3 {
+  font: 1.5em Arial, Helvetica, sans-serif;
+  text-transform: none;
+  text-align: left;
+  color: #24a09c;
+  word-break: break-all;
+}
+
+p {
+  margin: 2px 0 10px 0px;
+}
+
+p.kuvaus {
+  color: #24a09c;
+}
+
+p.kuvausVaihto {
+  color: #9f2556;
+}
+
+p.plomake {
+	margin: 5px 0px 15px 0px;
+}
+
+p.error {
+	color: red;
+}
+
+p.success {
+	color: green;
+}
+
+/* ------- PELIOHJEIDEN LUONTILOMAKE ------- */
+
+.lomake {
+  font: 1.0em Arial, Helvetica, sans-serif;
+  margin: 5px;
+  padding: 20px;
+  background: #fff;
+  color: rgb(102, 102, 102);
+  border-radius: 5px;
+}
+
+.lomakeHint {
+  display: none;
+  margin: 5px 0px 20px 0px;
+  padding: 7px;
+  font: 0.8em;
+  font-style: italic;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* nappulat */
+
+.lomakenappula {
+  font: 1.0em Arial, Helvetica, sans-serif;
+  text-transform: none;
+  text-decoration: none;
+  color: #000;
+  background: gold;
+  padding: 7px;
+  border-radius: 3px;
+  border: 0;
+}
+
+.lomakenappula:hover {
+	background: #f8cc00;
+	cursor: pointer;
+}
+
+a.naytaOhje {
+  font: 0.7em Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: dimgrey;
+  background: lightgrey;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+a.naytaOhje:hover {
+  background: darkgrey;
+  cursor: pointer;
+}
+
+.resetButton {
+  font: 0.7em Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: dimgrey;
+  background: lightgrey;
+  padding: 4px;
+  border-radius: 3px;
+  border: 0;
+  float: right;
+}
+
+.resetButton:hover {
+  background: darkgrey;
+  cursor: pointer;
+}
